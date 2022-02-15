@@ -13,6 +13,8 @@ Here we are cleaning the data from [Boston flight data for 2014](https://mgimond
 ### Layout:
 	.
     ├── BOS_2014_readme.txt
+    ├── Data
+    │   └── dat.final.rds
     ├── HW06.R
     └── README.md
 	
