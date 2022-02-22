@@ -1,3 +1,12 @@
+# Git ignore for repo 
+# (makes sure file types specified ared commited)
+
+
+# Mac storage files
 .DS_Store
+
+# git files
 .gitattributes
+
+# jetbrains files
 .idea
