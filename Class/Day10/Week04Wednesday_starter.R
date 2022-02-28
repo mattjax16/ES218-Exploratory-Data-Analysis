@@ -5,7 +5,7 @@ library(tidyr)
 # Breakdown the variables and create a long version of the data table
 
 # Load data and codebook 
-dat <- read.csv("http://mgimond.github.io/ES218/Data/Income_education.csv")
+shap
 code <- read.csv("http://mgimond.github.io/ES218/Data/Income_education_codebook.csv")
 
 # Add two columns to the codebook
