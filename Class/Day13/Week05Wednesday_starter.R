@@ -60,6 +60,7 @@ ggplot(dat1l , aes(x = reorder(Crop, Yield, median), y = Yield, fill = Crop)) +
 
 # Violin Plot (Like box plot but good for distribution and skew)
 ggplot(dat1l , aes(x = reorder(Crop, Yield, median), y = Yield, fill = Crop)) +
-  geom_violin() + xlab("Crop Type") + ylab("Yield (metric tons)")
+  geom_violin() + xlab("Crop Type") + ylab("Yield (metric tons)") + 
+  ggtitle("Yield by Crop Type")
 
 
