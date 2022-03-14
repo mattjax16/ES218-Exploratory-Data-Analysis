@@ -17,3 +17,21 @@ ggplot(dat1, aes(x = as.character(year), y = temp)) +
   ylab("year")
 
 
+ggplot(dat1, aes(x = temp)) + 
+  geom_density(fill = "bisque") + 
+  facet_wrap( ~ year)
+
+
+ggplot(dat1, aes(x = as.character(year), y = temp)) + 
+  geom_violin(fill = "bisque") +
+  xlab("year")
+
+
+
+ggplot(dat1, aes(x = as.character(year), y = temp)) + 
+  geom_boxplot(fill = "bisque") +
+  xlab("year")
+
+ggplot(dat1, aes(sample = temp)) + 
+  stat_qq(distribution = qunif) + xlab("f-val")
+  facet_wrap(~ year) 
