@@ -5,6 +5,7 @@ date: "3/7/2022"
 output: 
   html_document:
     toc : yes
+    code_folding: hide
 ---
 
 ```{r setup, include=FALSE}
@@ -18,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 ## Colby Spring Course Schedule
 
 
-```{r, echo = FALSE}
+```{r}
 
 library(dplyr)
 library(tidyr)
@@ -65,7 +66,7 @@ The smallest class size is `r min(dat1$Reg)` , the largest class size is `r max(
 
 ## Course Block Schedules 
 
-```{r, echo = FALSE, fig.width= 7, fig.height= 8}
+```{r, fig.width= 7, fig.height= 8}
 
 # Map all course blocks using geom_tile
 ggplot(dat1, aes(x = Day , y = (Start + End) / 2,  width = 0.5 , 
